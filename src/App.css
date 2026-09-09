@@ -1,3 +1,7 @@
+html, body, #root {
+  width: 100%;
+  min-height: 100vh;
+}
 * {
   margin: 0;
   padding: 0;
@@ -17,6 +21,7 @@ header {
   h1 {
     font-size: 72px;
     color: #ccf8ff;
+    font-weight: 700;
   }
 
   .description {
@@ -27,36 +32,46 @@ header {
   position: relative;
   input {
     position: absolute;
-    bottom: -32px;
+   bottom: -32px;
 
     width: 820px;
+    height: 64px;
     max-width: 90%;
     padding-left: 32px;
     font-size: 24px;
-    color: #FFFFFF;
+    color: #1a1a1a;
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    outline: none;
 
     &::placeholder {
-      color: #abb5be;
-      width: 820 px;
-      height: 64 px;
-
+      color: #ABB5BE;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0%;
     }
   }
   }
 main {
   background-color: #edeef3;
-  min-height: 80 vh;
+  min-height: 80vh;
 
-  .container {
-    width: 1000 px;
+  .container { 
+    width: 1000px;
     max-width: 90%;
     margin: 0 auto;
-    padding: ;
-  }
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-start;
 
   .card {
-    width: 316 px;
-   height: 184 px;
+    width: 316px;
+   height: 186px;
    border-radius: 4px;
    border: 1 px solid #dee2de;
    background-color: white;
@@ -66,19 +81,23 @@ main {
    align-items: center;
    gap: 10px;
    text-align: center;
+   flex-shrink: 0;
+   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   }
   .emoji {
-    font-size: 40 px;
-  
+    font-size: 48px;
   }
 .title {
-  font-size: 17 px;
+  font-size: 17px;
   font-weight: bold;
   text-decoration: underline;
+  background-color: #FFFFFF;
+  color: #1a1a1a;
 }
 
 .keywords {
-  font-size: 12 px;
+  font-size: 12px;
   color: #3f444a;
+}
 }
 }
